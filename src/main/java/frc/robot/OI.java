@@ -4,6 +4,9 @@
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
+/*prgmr                date          comment                                  */
+/*Casey A Marshall      12/3/2018     None                                    */
+/******************************************************************************/
 
 package frc.robot;
 import edu.wpi.first.wpilibj.Joystick;
@@ -25,7 +28,12 @@ public class OI {
   }
 
   public double getDriveStickSpeed(){
-     double throttle = m_driveStick.getThrottle();
-     return 2 / (Robot.m_oi.m_driveStick.getThrottle() + 3.0);
+    double throttle = m_driveStick.getThrottle();
+    if (m_driveStick.getY() < 0){
+    return 2.0 / (throttle + 3.0);
+    }else{
+    return -2.0 / (throttle + 3.0);
+    }
   }
 }
+
