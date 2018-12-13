@@ -29,11 +29,12 @@ public class OI {
 
   public double getDriveStickSpeed(){
     double throttle = m_driveStick.getThrottle();
-    if (m_driveStick.getY() < 0){
+    if (m_driveStick.getY() < 0 ){
     return 2.0 / (throttle + 3.0);
     }else{
     return -2.0 / (throttle + 3.0);
     }
   }
+  // The Rebels are attacking the Empire!
 }
 
