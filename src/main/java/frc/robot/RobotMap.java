@@ -14,6 +14,14 @@ package frc.robot;
  * floating around.
  */
 public class RobotMap {
+  
+  // Graham's number
+  // G64 = 3[G63 + 3]3
+  // G63 = 3[G62 + 3]3
+  // ...
+  // G2 = 3[G1 + 3]3
+  // G1 = 3[6]3
+  
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
   // public static int leftMotor = 1;
