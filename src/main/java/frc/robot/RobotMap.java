@@ -16,10 +16,10 @@ package frc.robot;
 public class RobotMap {
   
   // Graham's number
-  // G64 = 3[G63 + 3]3
-  // G63 = 3[G62 + 3]3
+  // G64 = 3[G63 + 2]3
+  // G63 = 3[G62 + 2]3
   // ...
-  // G2 = 3[G1 + 3]3
+  // G2 = 3[G1 + 2]3
   // G1 = 3[6]3
   
   // For example to map the left and right motors, you could define the
